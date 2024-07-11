@@ -1,0 +1,1419 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../definitions/">
+      
+      
+        <link rel="next" href="../flowchart/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Structure du Projet - Documentation de Projet AutoIA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#structure-du-projet" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentation de Projet AutoIA" class="md-header__button md-logo" aria-label="Documentation de Projet AutoIA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation de Projet AutoIA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Structure du Projet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentation de Projet AutoIA" class="md-nav__button md-logo" aria-label="Documentation de Projet AutoIA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Documentation de Projet AutoIA
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Définitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Structure du Projet
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Structure du Projet
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fichiers-et-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fichiers et Classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fichiers et Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iaconfigpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/config.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/config.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: Config
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iaanalysisdata_visualizationpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/analysis/data_visualization.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/analysis/data_visualization.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-datavisualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: DataVisualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iaanalysisstatistics_generatorpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/analysis/statistics_generator.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/analysis/statistics_generator.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-statisticsgenerator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: StatisticsGenerator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iadatadata_augmentationpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/data/data_augmentation.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/data/data_augmentation.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-dataaugmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: DataAugmentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iadatadata_processorpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/data/data_processor.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/data/data_processor.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-dataprocessor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: DataProcessor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iafeaturesfeature_engineeringpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/features/feature_engineering.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/features/feature_engineering.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-featureengineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: FeatureEngineering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iafeaturesfeature_selectionpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/features/feature_selection.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/features/feature_selection.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-featureselection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: FeatureSelection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iamodelbase_modelpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/model/base_model.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/model/base_model.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-basemodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: BaseModel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iamodelhyperparameter_optimizationpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/model/hyperparameter_optimization.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/model/hyperparameter_optimization.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-hyperparameteroptimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: HyperparameterOptimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iamodelmodel_trainerpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/model/model_trainer.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/model/model_trainer.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-modeltrainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: ModelTrainer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2ianewsmodelensemble_learningpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/news/modelensemble_learning.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/news/modelensemble_learning.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-ensemblelearning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: EnsembleLearning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2ianewsmodelregularizationpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/news/modelregularization.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/news/modelregularization.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-regularization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: Regularization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iautilsloggerpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/utils/logger.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/utils/logger.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Méthodes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fichier-de-configuration-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fichier de Configuration JSON
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fichier de Configuration JSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iaconfigjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/config.json
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flowchart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flowchart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exemples d'Utilisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../latest_advancements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les derniers outils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model_improvements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Models Improvements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools_not_included/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Outils Non Inclus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fichiers-et-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fichiers et Classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fichiers et Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iaconfigpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/config.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/config.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: Config
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iaanalysisdata_visualizationpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/analysis/data_visualization.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/analysis/data_visualization.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-datavisualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: DataVisualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iaanalysisstatistics_generatorpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/analysis/statistics_generator.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/analysis/statistics_generator.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-statisticsgenerator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: StatisticsGenerator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iadatadata_augmentationpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/data/data_augmentation.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/data/data_augmentation.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-dataaugmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: DataAugmentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iadatadata_processorpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/data/data_processor.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/data/data_processor.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-dataprocessor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: DataProcessor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iafeaturesfeature_engineeringpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/features/feature_engineering.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/features/feature_engineering.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-featureengineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: FeatureEngineering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iafeaturesfeature_selectionpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/features/feature_selection.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/features/feature_selection.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-featureselection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: FeatureSelection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iamodelbase_modelpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/model/base_model.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/model/base_model.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-basemodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: BaseModel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iamodelhyperparameter_optimizationpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/model/hyperparameter_optimization.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/model/hyperparameter_optimization.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-hyperparameteroptimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: HyperparameterOptimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iamodelmodel_trainerpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/model/model_trainer.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/model/model_trainer.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-modeltrainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: ModelTrainer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2ianewsmodelensemble_learningpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/news/modelensemble_learning.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/news/modelensemble_learning.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-ensemblelearning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: EnsembleLearning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2ianewsmodelregularizationpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/news/modelregularization.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/news/modelregularization.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classe-regularization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe: Regularization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iautilsloggerpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/utils/logger.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="project/H2.ia/utils/logger.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Méthodes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fichier-de-configuration-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fichier de Configuration JSON
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fichier de Configuration JSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#projecth2iaconfigjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      project/H2.ia/config.json
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="structure-du-projet">Structure du Projet</h1>
+<p>Pour faciliter la compréhension et l'utilisation de votre projet Python, je vais créer une documentation détaillée décrivant chaque fichier, classe, attribut, et fonction mentionnés. Cette documentation vous permettra d'avoir une vue d'ensemble claire de votre projet et de ses composants.</p>
+<h2 id="fichiers-et-classes">Fichiers et Classes</h2>
+<h3 id="projecth2iaconfigpy"><code>project/H2.ia/config.py</code></h3>
+<h4 id="classe-config">Classe: <code>Config</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>config_path</code>: Chemin vers le fichier de configuration.</li>
+<li><code>config</code>: Dictionnaire contenant la configuration chargée.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>__init__(self, config_path)</code>: Initialise l'objet Config avec le chemin du fichier de configuration.</li>
+<li><code>get(self, section, key)</code>: Retourne la valeur associée à la section et à la clé.</li>
+<li><code>set(self, section, key, value)</code>: Définit la valeur pour une section et une clé données.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2iaanalysisdata_visualizationpy"><code>project/H2.ia/analysis/data_visualization.py</code></h3>
+<h4 id="classe-datavisualization">Classe: <code>DataVisualization</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>config</code>: Configuration pour la visualisation des données.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>__init__(self, config)</code>: Initialise l'objet DataVisualization avec la configuration donnée.</li>
+<li><code>plot_histogram(self, df)</code>: Génère un histogramme à partir du DataFrame donné.</li>
+<li><code>plot_correlation_matrix(self, df)</code>: Génère une matrice de corrélation à partir du DataFrame donné.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2iaanalysisstatistics_generatorpy"><code>project/H2.ia/analysis/statistics_generator.py</code></h3>
+<h4 id="classe-statisticsgenerator">Classe: <code>StatisticsGenerator</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>config</code>: Configuration pour la génération de statistiques.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>__init__(self, config)</code>: Initialise l'objet StatisticsGenerator avec la configuration donnée.</li>
+<li><code>generate_statistics(self, df)</code>: Génère des statistiques descriptives à partir du DataFrame donné.</li>
+<li><code>generate_correlation_matrix(self, df)</code>: Génère une matrice de corrélation à partir du DataFrame donné.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2iadatadata_augmentationpy"><code>project/H2.ia/data/data_augmentation.py</code></h3>
+<h4 id="classe-dataaugmentation">Classe: <code>DataAugmentation</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>data</code>: Données à augmenter.</li>
+<li><code>target</code>: Cible des données.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>__init__(self, data, target)</code>: Initialise l'objet DataAugmentation avec les données et la cible données.</li>
+<li><code>bootstrap_resample(self, n_samples)</code>: Effectue un rééchantillonnage bootstrap des données.</li>
+<li><code>add_gaussian_noise(self, noise_level)</code>: Ajoute du bruit gaussien aux données.</li>
+<li><code>augment_balanced(self, method)</code>: Augmente les données en utilisant une méthode d'équilibrage.</li>
+<li><code>augment_with_transformations(self, transformations)</code>: Augmente les données en utilisant des transformations spécifiées.</li>
+<li><code>save_augmented_data(self, filepath, file_type)</code>: Sauvegarde les données augmentées dans un fichier.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2iadatadata_processorpy"><code>project/H2.ia/data/data_processor.py</code></h3>
+<h4 id="classe-dataprocessor">Classe: <code>DataProcessor</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>config</code>: Configuration pour le traitement des données.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>__init__(self, config)</code>: Initialise l'objet DataProcessor avec la configuration donnée.</li>
+<li><code>handle_missing_values(self, df)</code>: Traite les valeurs manquantes dans le DataFrame donné.</li>
+<li><code>encode_categorical(self, df)</code>: Encode les variables catégorielles dans le DataFrame donné.</li>
+<li><code>normalize_data(self, df)</code>: Normalise les données dans le DataFrame donné.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2iafeaturesfeature_engineeringpy"><code>project/H2.ia/features/feature_engineering.py</code></h3>
+<h4 id="classe-featureengineering">Classe: <code>FeatureEngineering</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>config</code>: Configuration pour l'ingénierie des caractéristiques.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>__init__(self, config)</code>: Initialise l'objet FeatureEngineering avec la configuration donnée.</li>
+<li><code>create_features(self, df)</code>: Crée de nouvelles caractéristiques à partir du DataFrame donné.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2iafeaturesfeature_selectionpy"><code>project/H2.ia/features/feature_selection.py</code></h3>
+<h4 id="classe-featureselection">Classe: <code>FeatureSelection</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>config</code>: Configuration pour la sélection des caractéristiques.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>__init__(self, config)</code>: Initialise l'objet FeatureSelection avec la configuration donnée.</li>
+<li><code>select_features(self, X, y)</code>: Sélectionne les meilleures caractéristiques à partir des données données.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2iamodelbase_modelpy"><code>project/H2.ia/model/base_model.py</code></h3>
+<h4 id="classe-basemodel">Classe: <code>BaseModel</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>model_name</code>: Nom du modèle.</li>
+<li><code>model_params</code>: Paramètres du modèle.</li>
+<li><code>model</code>: Instance du modèle.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>__init__(self, model_name, model_params)</code>: Initialise l'objet BaseModel avec le nom et les paramètres du modèle.</li>
+<li><code>train(self, X_train, y_train)</code>: Entraîne le modèle avec les données d'entraînement fournies.</li>
+<li><code>predict(self, X_test)</code>: Prédit les résultats pour les données de test fournies.</li>
+<li><code>evaluate(self, X_test, y_test)</code>: Évalue le modèle avec les données de test fournies.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2iamodelhyperparameter_optimizationpy"><code>project/H2.ia/model/hyperparameter_optimization.py</code></h3>
+<h4 id="classe-hyperparameteroptimization">Classe: <code>HyperparameterOptimization</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>model</code>: Modèle à optimiser.</li>
+<li><code>param_grid</code>: Grille de paramètres pour l'optimisation.</li>
+<li><code>param_distributions</code>: Distributions de paramètres pour l'optimisation.</li>
+<li><code>search_method</code>: Méthode de recherche pour l'optimisation.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>__init__(self, model, param_grid, param_distributions, search_method)</code>: Initialise l'objet HyperparameterOptimization avec le modèle et les paramètres donnés.</li>
+<li><code>grid_search(self, X, y)</code>: Effectue une recherche en grille pour optimiser les hyperparamètres.</li>
+<li><code>random_search(self, X, y)</code>: Effectue une recherche aléatoire pour optimiser les hyperparamètres.</li>
+<li><code>optuna_search(self, objective, n_trials)</code>: Utilise Optuna pour optimiser les hyperparamètres.</li>
+<li><code>hyperopt_search(self, objective, space, max_evals)</code>: Utilise Hyperopt pour optimiser les hyperparamètres.</li>
+<li><code>bayesian_optimization(self, pbounds, init_points, n_iter)</code>: Utilise l'optimisation bayésienne pour optimiser les hyperparamètres.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2iamodelmodel_trainerpy"><code>project/H2.ia/model/model_trainer.py</code></h3>
+<h4 id="classe-modeltrainer">Classe: <code>ModelTrainer</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>X_train</code>: Données d'entraînement.</li>
+<li><code>results</code>: Résultats de l'entraînement.</li>
+<li><code>model_name</code>: Nom du modèle.</li>
+<li><code>config</code>: Configuration pour l'entraînement du modèle.</li>
+<li><code>X_test</code>: Données de test.</li>
+<li><code>model_params</code>: Paramètres du modèle.</li>
+<li><code>train_params</code>: Paramètres d'entraînement.</li>
+<li><code>layers</code>: Couches du modèle.</li>
+<li><code>y_test</code>: Cibles des données de test.</li>
+<li><code>split_params</code>: Paramètres de division des données.</li>
+<li><code>y_train</code>: Cibles des données d'entraînement.</li>
+<li><code>model</code>: Instance du modèle.</li>
+<li><code>data</code>: Données à utiliser pour l'entraînement.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>__init__(self, data, model_name, config)</code>: Initialise l'objet ModelTrainer avec les données, le nom du modèle et la configuration donnés.</li>
+<li><code>build_tensorflow_model(self, input_shape, layers, dropout_rate)</code>: Construit un modèle TensorFlow avec les paramètres donnés.</li>
+<li><code>build_pytorch_model(self, input_dim, layers, dropout_rate)</code>: Construit un modèle PyTorch avec les paramètres donnés.</li>
+<li><code>train(self, X_train, y_train, X_val, y_val, epochs, batch_size)</code>: Entraîne le modèle avec les données et paramètres d'entraînement donnés.</li>
+<li><code>predict(self, X)</code>: Prédit les résultats pour les données fournies.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2ianewsmodelensemble_learningpy"><code>project/H2.ia/news/modelensemble_learning.py</code></h3>
+<h4 id="classe-ensemblelearning">Classe: <code>EnsembleLearning</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>gradient_boosting</code>: Modèle de boosting par gradient.</li>
+<li><code>stacking</code>: Modèle de stacking.</li>
+<li><code>random_forest</code>: Modèle de forêt aléatoire.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>train(self, X, y)</code>: Entraîne le modèle d'ensemble avec les données fournies.</li>
+<li><code>predict(self, X)</code>: Prédit les résultats pour les données fournies.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2ianewsmodelregularizationpy"><code>project/H2.ia/news/modelregularization.py</code></h3>
+<h4 id="classe-regularization">Classe: <code>Regularization</code></h4>
+<ul>
+<li><strong>Attributs:</strong><ul>
+<li><code>method</code>: Méthode de régularisation.</li>
+<li><code>alpha</code>: Paramètre de régularisation.</li>
+</ul>
+</li>
+<li><strong>Méthodes:</strong><ul>
+<li><code>__init__(self, method, alpha)</code>: Initialise l'objet Regularization avec la méthode et le paramètre alpha donnés.</li>
+<li><code>train(self, X, y)</code>: Entraîne le modèle avec régularisation sur les données fournies.</li>
+<li><code>predict(self, X)</code>: Prédit les résultats pour les données fournies.</li>
+</ul>
+</li>
+</ul>
+<h3 id="projecth2iautilsloggerpy"><code>project/H2.ia/utils/logger.py</code></h3>
+<h4 id="methodes">Méthodes:</h4>
+<pre><code>- `setup_logger(name, log_file, level)`: Configure le logger avec le nom, le fichier de log et le niveau donnés.
+</code></pre>
+<h2 id="fichier-de-configuration-json">Fichier de Configuration JSON</h2>
+<h3 id="projecth2iaconfigjson"><code>project/H2.ia/config.json</code></h3>
+<p>```json
+{
+  "data_loader": {
+    "file_type": "csv",
+    "sep": ",",
+    "encoding": "utf-8",
+    "sheet_name": 0,
+    "columns": null,
+    "index_col": null,
+    "sql_query": null,
+    "xml_path": null,
+    "db_uri": null,
+    "filepath": "path/to/data.csv"
+  },
+  "remove_duplicates": {
+    "method": "drop",
+    "subset": null,
+    "mark_column": "is_duplicate"
+  },
+  "handle_missing_values": {
+    "method": "fill_mean",
+    "value": null,
+    "subset": null,
+    "custom_func": null,
+    "n_neighbors": 5
+  },
+  ...
+}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

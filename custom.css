@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+code {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    padding: 0.2em 0.4em;
+    font-size: 90%;
+}
+
+pre {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    padding: 1em;
+    overflow: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+}
